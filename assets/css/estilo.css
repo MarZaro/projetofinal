@@ -1,0 +1,163 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family:  'Victor Mono', monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: .03rem;
+}
+
+h1 {
+  font-family:'Abril Fatface', cursive;;
+}
+
+header {
+  width: 100%;
+  max-width: flex;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #e9e6df;
+}
+
+main {
+  background-color: #E9E6DF;
+}
+
+.carousel-item.item1 {
+  background-image: url("../imagens/cell-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-item.item2 {
+  background-image: url("../imagens/cell-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+
+/* carrossel
+------------------------- */
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-item {
+  margin-top: 36px;
+  height: 28rem;
+  background-color: #8C8745
+}
+
+
+
+.carousel-caption {
+
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+}
+
+
+
+.presentation {
+  height: 200px;
+  background-color: #8C8745;
+  ;
+  margin: 0;
+}
+
+
+/* conteudo
+------------------------- */
+.teoria {
+  background-color: #C0BDF8;
+}
+
+.hipotese {
+  background-color: #C7C684;
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  background-color: #8C8745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.footer__texto {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.video {
+  margin-top: 10px;
+}
+
+.icone {
+  width: 24px;
+  border-radius: 50%;
+}
+
+.icone--texto {
+  margin: 0 8px;
+  animation: pulsar 1s infinite alternate;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 763px) {
+  .carousel-item img {
+    display: none; 
+    max-height: 100%;
+  }
+}
+
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+
+  .xcarousel-caption p {
+    margin-right: 50%;
+    font-size: 1.1rem;
+    position: top;
+
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+/* ChatGPT - blink style */
+.blinking-cursor {
+  margin-left: 5px;
+  background-color: #fff;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  50.1%, 100% {
+    opacity: 0;
+  }
+}
+
